@@ -51,6 +51,7 @@
                 else
                 {
                     Console.WriteLine("This is overflown.");
+                    _content = Capacity;
                 }
             }
         }
