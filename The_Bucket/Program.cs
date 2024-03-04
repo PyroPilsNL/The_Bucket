@@ -16,16 +16,22 @@ using The_Bucket;
 // Bucket c = new Bucket(12);
 // Console.WriteLine(c.Capacity);
 
+// Bucket d = new Bucket(0);
+// Console.WriteLine(d.Capacity);
+//
+// d.Content = 12;
+// Console.WriteLine(d.Content);
+//
+// d.Empty();
+// Console.WriteLine(d.Content);
+//
+// d.Fill(13);
+// Console.WriteLine(d.Content);
 
+Bucket e = new Bucket(10);
+e.Fill(10);
+Bucket f = new Bucket(25);
 
-Bucket d = new Bucket(0);
-Console.WriteLine(d.Capacity);
-
-d.Content = 12;
-Console.WriteLine(d.Content);
-
-d.Empty();
-Console.WriteLine(d.Content);
-
-d.Fill(13);
-Console.WriteLine(d.Content);
+f.FillBucketWithOtherBucket(e);
+Console.WriteLine(e.Content);
+Console.WriteLine(f.Content);

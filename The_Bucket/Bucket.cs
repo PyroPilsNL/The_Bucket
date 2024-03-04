@@ -8,7 +8,7 @@ public class Bucket : Container
 
     public Bucket(int capacity)
     {
-        if (capacity <= 10 || capacity >= 2500)
+        if (capacity < 10 || capacity >= 2500)
         {
             if (capacity < 0)
             {
@@ -20,6 +20,31 @@ public class Bucket : Container
         else
         {
             Capacity = capacity;
+        }
+    }
+
+    public void FillBucketWithOtherBucket(Bucket otherBucket)
+    {
+        int spaceLeft = Capacity - Content;
+
+        if (spaceLeft > 0)
+        {
+            if (spaceLeft >= otherBucket.Content)
+            {
+                Content += otherBucket.Content;
+                otherBucket.Empty();
+                Console.WriteLine("Filled this bucket with the content of the other bucket.");
+            }
+            else
+            {
+                Content = Capacity;
+                otherBucket.Content -= spaceLeft;
+                Console.WriteLine("Filled this bucket to its capacity with the content of the other bucket.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("This bucket is already full.");
         }
     }
 }
