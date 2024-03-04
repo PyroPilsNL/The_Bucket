@@ -10,6 +10,10 @@ public class Bucket : Container
     {
         if (capacity <= 10 || capacity >= 2500)
         {
+            if (capacity < 0)
+            {
+                throw new NegativeNumberException("Cannot use Negative Numbers");
+            }
             Console.WriteLine("Bucket is too large or too small! Pls select a number between 10 and 2500");
             Capacity = 12;
         }
