@@ -1,8 +1,8 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71b42755_002D30da_002D4c40_002D96b6_002D23136222ecae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Empty_CheckForEmpty_RightAmount" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F57F431C-A432-488E-9DF8-797D31A778A2::net8.0::The_Bucket_Tests.Test_Oilbarrel.Empty_CheckForEmpty_RightAmount&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F57F431C-A432-488E-9DF8-797D31A778A2::net8.0::The_Bucket_Tests.Test_Rainbarrel.Empty_CheckForEmpty_RightAmount&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::F57F431C-A432-488E-9DF8-797D31A778A2::net8.0::The_Bucket_Tests.Test_Rainbarrel.OilBarrel_CheckForNegativeFill_RightAmount&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71b42755_002D30da_002D4c40_002D96b6_002D23136222ecae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Empty_CheckForEmpty_RightAmount" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::F57F431C-A432-488E-9DF8-797D31A778A2::net8.0::The_Bucket_Tests.Test_Oilbarrel.Empty_CheckForEmpty_RightAmount&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::F57F431C-A432-488E-9DF8-797D31A778A2::net8.0::The_Bucket_Tests.Test_Rainbarrel.Empty_CheckForEmpty_RightAmount&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::F57F431C-A432-488E-9DF8-797D31A778A2::net8.0::The_Bucket_Tests.Test_Rainbarrel.OilBarrel_CheckForNegativeFill_RightAmount&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
