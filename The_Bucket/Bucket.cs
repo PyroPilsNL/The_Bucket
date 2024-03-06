@@ -27,24 +27,25 @@ public class Bucket : Container
     {
         int spaceLeft = Capacity - Content;
 
-        if (spaceLeft > 0)
+        if (spaceLeft <= 0)
         {
-            if (spaceLeft >= otherBucket.Content)
-            {
-                Content += otherBucket.Content;
-                otherBucket.Empty();
-                Console.WriteLine("Filled this bucket with the content of the other bucket.");
-            }
-            else
-            {
-                Content = Capacity; // Fill current bucket to its capacity
-                otherBucket.Content -= spaceLeft; // Reduce the content of the other bucket by the space left in the current bucket
-                Console.WriteLine("Filled this bucket to its capacity with the content of the other bucket.");
-            }
+            Console.WriteLine("This bucket is already full.");
+            return;
+        }
+
+        if (otherBucket.Content <= spaceLeft)
+        {
+            Content += otherBucket.Content;
+            otherBucket.Empty();
+            Console.WriteLine("Filled this bucket with the content of the other bucket.");
         }
         else
         {
-            Console.WriteLine("This bucket is already full.");
+            Content = Capacity;
+            int remainingContent = otherBucket.Content - spaceLeft;
+            otherBucket.Content = remainingContent;
+            Console.WriteLine("Filled this bucket to its capacity with the content of the other bucket. Leftover content in other bucket.");
         }
     }
+
 }

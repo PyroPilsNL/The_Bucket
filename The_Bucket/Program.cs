@@ -28,9 +28,14 @@ using The_Bucket;
 // d.Fill(13);
 // Console.WriteLine(d.Content);
 
-Bucket e = new Bucket(10);
-e.Fill(10);
+Bucket e = new Bucket(25);
+e.Fill(20);
+Console.WriteLine(e.Content);
 Bucket f = new Bucket(25);
+f.Fill(10);
+Console.WriteLine(f.Content);
+
+Console.WriteLine("===========");
 
 f.FillBucketWithOtherBucket(e);
 Console.WriteLine(e.Content);

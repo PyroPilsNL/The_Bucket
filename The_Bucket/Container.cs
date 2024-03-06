@@ -11,9 +11,13 @@
             get { return _content; }
             set
             {
-                if (value < 0 || value >= Capacity)
+                if (value < 0)
                 {
-                    Console.WriteLine("Content cannot be negative or exceed the capacity.");
+                    Console.WriteLine("Content cannot be negative.");
+                }
+                else if (value > Capacity)
+                {
+                    Console.WriteLine("Content cannot exceed the capacity.");
                 }
                 else
                 {

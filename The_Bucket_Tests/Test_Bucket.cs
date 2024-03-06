@@ -91,21 +91,21 @@ public class Test_Bucket
         Assert.That(a.Content,Is.EqualTo(Expectedresult));
     }
 
-    [TestCase(25, 10, 10, 20, 0)]
-    [TestCase(25, 20, 10, 20, 5)]
-    [TestCase(25, 25, 10, 25, 10)]
-    [TestCase(25, 10, 30, 10, 10)]
-    public void FillBucketWithOtherBucket_CheckContentAfterFill(int capacityA, int contentA, int contentB, int expectedContentA, int expectedContentB)
+    [TestCase(10, 10, 20, 0)] // A= 0 / B = 20
+    [TestCase(20, 10, 25, 5)] // A = 25 / B = 5
+    [TestCase(25, 10, 25, 10)] // A = 25 / B = 10
+    [TestCase(10, 30, 25, 10)] //A = 25 / B = 10
+    public void FillBucketWithOtherBucket_CheckContentAfterFill(int contentA, int contentB, int expectedContentA, int expectedContentB)
     {
         // Arrange
-        Bucket a = new Bucket(capacityA);
+        Bucket a = new Bucket(25);
         Bucket b = new Bucket(25);
 
-        a.Fill(contentA);
-        b.Fill(contentB);
+        a.Fill(contentA); // 10
+        b.Fill(contentB); // 30
 
         // Act
-        a.FillBucketWithOtherBucket(b);
+        a.FillBucketWithOtherBucket(b); //a = 25, b = 15
 
         // Assert
         Assert.That(a.Content, Is.EqualTo(expectedContentA));
