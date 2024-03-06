@@ -37,8 +37,8 @@ public class Bucket : Container
             }
             else
             {
-                Content = Capacity;
-                otherBucket.Content -= spaceLeft;
+                Content = Capacity; // Fill current bucket to its capacity
+                otherBucket.Content -= spaceLeft; // Reduce the content of the other bucket by the space left in the current bucket
                 Console.WriteLine("Filled this bucket to its capacity with the content of the other bucket.");
             }
         }

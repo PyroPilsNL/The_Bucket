@@ -5,6 +5,7 @@
         public int Capacity { get; protected set; }
         private int _content;
 
+
         public int Content
         {
             get { return _content; }
