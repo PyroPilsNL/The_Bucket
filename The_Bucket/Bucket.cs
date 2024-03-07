@@ -47,5 +47,4 @@ public class Bucket : Container
             Console.WriteLine("Filled this bucket to its capacity with the content of the other bucket. Leftover content in other bucket.");
         }
     }
-
 }
