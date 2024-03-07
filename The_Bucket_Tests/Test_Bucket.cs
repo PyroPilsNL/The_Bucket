@@ -118,5 +118,4 @@ public class Test_Bucket
         // Arrange & Act & Assert
         Assert.Throws<NegativeNumberException>(() => new Bucket(-5));
     }
-
 }
