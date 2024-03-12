@@ -118,4 +118,45 @@ public class Test_Bucket
         // Arrange & Act & Assert
         Assert.Throws<NegativeNumberException>(() => new Bucket(-5));
     }
+    [TestCase(12, 12, false)]
+    [TestCase(12, 13, true)]
+    [TestCase(12, 11, false)]
+    public void OverflowTest(int input, int amount, bool expectedResult)
+    {
+        bool tested = false;
+
+        Bucket bucket = new Bucket(input);
+
+        // Subscribe to Overfloat event
+        bucket.Overfloat += (o, e) =>
+        {
+            // No need to raise the event again within the event handler
+            // Just set the appropriate behavior based on the event
+            tested = true;
+        };
+
+        // Fill the bucket, this will trigger Overfloat event
+        bucket.Fill(amount);
+
+        // Assert the result
+        Assert.AreEqual(expectedResult, tested);
+    }
+
+    [TestCase(12,12,true)]
+    [TestCase(12,13,false)]
+    [TestCase(12,11,false)]
+    public void Fulltesten(int input, int amount, bool result)
+    {
+        bool tested = false;
+
+        Bucket emmer = new Bucket(input);
+
+        emmer.Full += (o, e) => tested = true;
+
+        emmer.Fill(amount);
+
+        Assert.AreEqual(result, tested);
+    }
+
+
 }

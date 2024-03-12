@@ -28,3 +28,18 @@ C:/Users/wwolf/OneDrive - Windesheim Office365/c#/The_Bucket/The_Bucket/The_Buck
 /Users/wouterwolf/Documents/C# projecten/The_Bucket/The_Bucket/obj/Debug/net8.0/The_Bucket.pdb
 /Users/wouterwolf/Documents/C# projecten/The_Bucket/The_Bucket/obj/Debug/net8.0/The_Bucket.genruntimeconfig.cache
 /Users/wouterwolf/Documents/C# projecten/The_Bucket/The_Bucket/obj/Debug/net8.0/ref/The_Bucket.dll
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\bin\Debug\net8.0\The_Bucket.exe
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\bin\Debug\net8.0\The_Bucket.deps.json
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\bin\Debug\net8.0\The_Bucket.runtimeconfig.json
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\bin\Debug\net8.0\The_Bucket.dll
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\bin\Debug\net8.0\The_Bucket.pdb
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.AssemblyInfoInputs.cache
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.AssemblyInfo.cs
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.csproj.CoreCompileInputs.cache
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.sourcelink.json
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.dll
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\refint\The_Bucket.dll
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.pdb
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\The_Bucket.genruntimeconfig.cache
+C:\Users\wwolf\OneDrive\Documenten\Schoolprojecten\The_Bucket\obj\Debug\net8.0\ref\The_Bucket.dll

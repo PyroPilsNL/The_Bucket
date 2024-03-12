@@ -2,41 +2,35 @@
 
 using The_Bucket;
 
-// Rainbarrel a = new Rainbarrel(Rainbarrel.CapacityOptions.large);
-// Console.WriteLine(a.Capacity);
+Rainbarrel tank = new Rainbarrel(Rainbarrel.CapacityOptions.medium);
+tank.Overflow += Container_Overflow;
+tank.Full += Container_full;
+tank.Overfloat += Container_overfloating;
 
-// Oilbarrel b = new Oilbarrel();
-// Console.WriteLine(b.Capacity);
-//
-// b.Fill(159);
-//
-// b.Fill(-158);
-// Console.WriteLine(b.Content);
+tank.Fill(160); // This will cause overflow and trigger the event
 
-// Bucket c = new Bucket(12);
-// Console.WriteLine(c.Capacity);
+static void Container_Overflow(object sender, EventArgs e)
+{
+    Console.WriteLine("Container overflowed!");
+}
 
-// Bucket d = new Bucket(0);
-// Console.WriteLine(d.Capacity);
-//
-// d.Content = 12;
-// Console.WriteLine(d.Content);
-//
-// d.Empty();
-// Console.WriteLine(d.Content);
-//
-// d.Fill(13);
-// Console.WriteLine(d.Content);
-
-Bucket e = new Bucket(25);
-e.Fill(20);
-Console.WriteLine(e.Content);
-Bucket f = new Bucket(25);
-f.Fill(10);
-Console.WriteLine(f.Content);
-
-Console.WriteLine("===========");
-
-f.FillBucketWithOtherBucket(e);
-Console.WriteLine(e.Content);
-Console.WriteLine(f.Content);
+static void Container_full(object sender, EventArgs e)
+{
+    Console.WriteLine("Container is fulled to the max!");
+}
+static void Container_overfloating(object sender, AmountArgs e)
+{
+    var a = sender as Container;
+    Console.WriteLine("It will been overflown, do want that? Y/N");
+    string userInput = Console.ReadLine();
+    if (userInput != null && userInput.Trim().Equals("Y", StringComparison.OrdinalIgnoreCase))
+    {
+        a.OnOverflow(EventArgs.Empty);
+        int b = a.Content + e.Amount - (a.Capacity*2);
+        Console.WriteLine($"Its overflown by: {b}");
+    }
+    else
+    {
+        a.OnFull(EventArgs.Empty);
+    }
+}
