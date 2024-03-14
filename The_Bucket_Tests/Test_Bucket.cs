@@ -121,7 +121,7 @@ public class Test_Bucket
     [TestCase(12, 12, false)]
     [TestCase(12, 13, true)]
     [TestCase(12, 11, false)]
-    public void OverflowTest(int input, int amount, bool expectedResult)
+    public void OverflowTestEvent(int input, int amount, bool expectedResult)
     {
         bool tested = false;
 
@@ -145,7 +145,7 @@ public class Test_Bucket
     [TestCase(12,12,true)]
     [TestCase(12,13,false)]
     [TestCase(12,11,false)]
-    public void Fulltesten(int input, int amount, bool result)
+    public void FulltestenEvent(int input, int amount, bool result)
     {
         bool tested = false;
 
