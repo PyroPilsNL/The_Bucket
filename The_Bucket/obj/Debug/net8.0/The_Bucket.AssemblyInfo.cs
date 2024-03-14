@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("The_Bucket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+124a9905931cf2f5dbff3c81359b367b15e447f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfcc52089b38d4718f461e000520d2d26b6a8c7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("The_Bucket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("The_Bucket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

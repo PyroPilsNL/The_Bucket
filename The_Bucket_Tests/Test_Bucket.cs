@@ -127,18 +127,13 @@ public class Test_Bucket
 
         Bucket bucket = new Bucket(input);
 
-        // Subscribe to Overfloat event
         bucket.Overfloat += (o, e) =>
         {
-            // No need to raise the event again within the event handler
-            // Just set the appropriate behavior based on the event
             tested = true;
         };
 
-        // Fill the bucket, this will trigger Overfloat event
         bucket.Fill(amount);
 
-        // Assert the result
         Assert.AreEqual(expectedResult, tested);
     }
 
